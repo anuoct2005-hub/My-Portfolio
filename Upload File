@@ -1,0 +1,211 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anusree | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Myself G.Anusree</h1>
+    <p>Mathematics Student | MERN STACK Learner</p>
+  </section>
+  <section class="skills">
+  <h2>My Skills</h2>
+
+  <div class="skill-box">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">Basic JavaScript</div>
+     <div class="card">Bootstrap</div>
+  </div>
+</section>
+<section class="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out via email or social media!</p>
+
+  <div class="contact-links">
+    <a href="mailto:anuoct2005@gmail.com" target="_blank">Email</a>
+    <a href="https://www.linkedin.com/in/G.Anu Sree" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Anusree" target="_blank">GitHub</a>
+  </div>
+</section>
+
+
+
+</body>
+</html>
+style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ad59e6, #e244a6);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.skills {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: whitesmoke;
+ 
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skill-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgb(223, 90, 172);
+  padding: 25px 40px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px)scale(1.01);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  
+}
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f154f1;
+  color: black;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+  color:black;
+  text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+ background: rgb(230, 142, 248);
+  color:white;
+  transform: scale(1.05);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+section {
+  padding: 80px 20px;
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .skill-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-links a {
+    display: block;
+    margin: 10px auto;
+  }
+}
+section {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero h1 {
+  animation: slideIn 1.2s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.card {
+  animation: zoomIn 0.8s ease ease-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+
